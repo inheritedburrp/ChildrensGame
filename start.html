@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+    <style>
+        html, body {
+            height: 100%;
+        }
+        html {
+            display: table;
+            margin: auto;
+        }
+        body {
+            display: table-cell;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+<form id="mainForm">
+    Number of people(n):<br>
+    <input type="text" name="n" required="required" pattern="^((?!(0))[0-9]+)">
+    <br>
+    Threshold Value(k):<br>
+    <input type="text" name="k" min="1" required="required" pattern="^((?!(0))[0-9]+)">
+    <br><br>
+    <input type="submit" id="submit" value="Submit">
+</form>
+
+<p>Click on submit button to see the last man standing</p>
+
+</body>
+</html>
